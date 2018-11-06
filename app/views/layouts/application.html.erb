@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<%= yield %>
+ 
+ <header>
+        <nav class='nav-basic' id="nav-basic">
+            <ul>
+                <li>
+                    <a href="#">Givenness</a>
+                </li>
+                <li>
+                    <a href="#">Editor</a>
+                </li>
+                <li>
+                    <a href="#">Community</a>
+                </li>
+                <li>
+                    <a href="#">Myclass</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+ 
+    </header>
+    
+    
+    <script>
+        const myNav = document.getElementById('nav-basic')
+ 
+        window.onscroll = function () {
+            console.log(window.scrollY)
+            if (window.scrollY >= 450) {
+                myNav.className = 'nav-change';
+            }
+            else {
+                myNav.className = 'nav-basic';
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div class="footer-main-div">
+ 
+    <div class="footer-social-icons">
+	    <ul>
+		    <li><a href="#"><img src="#" height="35em" width="35em"></a></li>
+		    <li><a href="#"><img src="#" height="35em" width="35em"></a></li>
+		    <li><a href="#"><img src="#" height="40em" width="35em"></a></li>
+		    <li><a href="#"><img src="#" height="35em" width="35em"></a></li>
+	    </ul>
+    </div>	
+ 
+    <div class="footer-menu-one">
+    	<ul>
+		    <li><a href="/">Home</a></li>
+        <li><a href=" #">Tutor</a></li>
+        <li><a href="#">Member</a></li>
+        <li><a href="#">Portfolios</a></li>
+ 	    </ul>
+    </div>
+ 
+    <div class="footer-menu-two">
+	    <ul>
+		      <li><a href="#">두줄</a></li>
+         <li><a href="#">인게</a></li>
+         <li><a href="#">더간지인대</a></li>
+         <li><a href="#">뭐넣죸ㅋ</a></li>
+ 	    </ul>
+    </div>
+</div>
+ 
+    <div class="footer-bottom">
+    	<p>Design by: Express train</p>
+    </div>
+    
+</body>
+</html>
