@@ -2,15 +2,15 @@ Rails.application.routes.draw do
   
   root 'main#index'
   
-  get 'home/map'
+  get '/map'=>'home#map'
+ 
+  get '/list' =>'home#list'
 
-  get 'home/list'
+  get '/notice'=>'home#notice'
 
-  get 'home/notice'
+  get '/index'=>  'post#index'
 
-  get 'post/index'
-
-  get 'post/wirte'
+  get '/wirte' =>'post#write'
 
   get 'main/index'
 

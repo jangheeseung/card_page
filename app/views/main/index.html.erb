@@ -1,46 +1,82 @@
-<html lang="en">
-<head>
-  <title>Workspace</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+  <html lang="en">
 <body>
-
-<%= yield %>
- <header>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <header>
         <nav class='nav-basic' id="nav-basic">
             <ul>
                 <li>
-                    <a href="#">Givenness</a>
+                    <img src="..">
                 </li>
                 <li>
-                    <a href="#">Editor</a>
+                    <a href="/">HOME</a>
                 </li>
                 <li>
-                    <a href="#">Community</a>
+                    <a href="/list">STORE</a>
                 </li>
                 <li>
-                    <a href="#">Myclass</a>
+                    <a href="/notice">NOTICE</a>
                 </li>
                 <li>
-                    <a href="#">Login</a>
+                    <a href="/index">신청하기</a>
+                </li>
+                
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#LoginModal">Login</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
                 </li>
             </ul>
         </nav>
  
         <div class='HeaderImage'>
- <img src="/assets/main.png" height="500px;">
+             <img src="/assets/main.png" height="450px;">
         </div>
+ 
+     <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                       <img src="assets/main.png" width="50px" height="50px">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form action='/users/sign_in' method='post'>
+                        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                        <div class="form-group">
+                          <label for="user_email">ID</label>
+                          <input type="text" value="" name="user[email]" autofocus="autofocus"  class="form-control" id="user_email" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1 user_password">Password</label>
+                          <input type="password" name="user[password]" class="form-control" id="user_password" placeholder="Password">
+                        </div>
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary" name="commit" >Login</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </form>
+                  </div>
+  	    	</div>
+              </div>
+              
     </header>
-
+ 
+    
+    
     
     <script>
         const myNav = document.getElementById('nav-basic')
  
         window.onscroll = function () {
             console.log(window.scrollY)
-            if (window.scrollY >= 400) {
+            if (window.scrollY >= 380) {
                 myNav.className = 'nav-change';
             }
             else {
@@ -48,11 +84,12 @@
             }
         }
     </script>
+    
     <div class="container1">
     <seticon>
         <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
+    <img class="card-img-top" src="assets/main.png" alt="Card image cap" height="200px">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -60,7 +97,7 @@
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
+    <img class="card-img-top" src="assets/main.png" alt="Card image cap" height="200px">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -68,7 +105,7 @@
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
+    <img class="card-img-top" src="assets/main.png" alt="Card image cap" height="200px">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -77,6 +114,5 @@
   </div>
 </div>
     </seticon>
-    </div>
+</div>
 </body>
-</html>

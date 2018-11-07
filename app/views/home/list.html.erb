@@ -1,2 +1,59 @@
-<h1>Home#list</h1>
-<p>Find me in app/views/home/list.html.erb</p>
+  <html lang="en">
+<body>
+<link rel="stylesheet" type="text/css" href="home.css">
+<header>
+        <nav class='nav-basic' id="nav-basic">
+            <ul>
+                <li>
+                    <img src="..">
+                </li>
+                <li>
+                    <a href="/">HOME</a>
+                </li>
+                <li>
+                    <a href="/list">STORE</a>
+                </li>
+                <li>
+                    <a href="/notice">NOTICE</a>
+                </li>
+                <li>
+                    <a href="/index">신청하기</a>
+                </li>
+                
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#LoginModal">Login</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        
+          <script>
+        const myNav = document.getElementById('nav-basic')
+ 
+        window.onscroll = function () {
+            console.log(window.scrollY)
+            if (window.scrollY >= 0.1) {
+                myNav.className = 'nav-change';
+            }
+            else {
+                myNav.className = 'nav-basic';
+            }
+        }
+    </script>
+<div class="container2">
+<seticon>
+
+ <div class="card mb-3">
+  <img class="card-img-top" src="assets/main.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+</seticon>
+</div>
+</body>       
+</html>
