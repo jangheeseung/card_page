@@ -139,3 +139,9 @@
 .select select:disabled ~ .select__arrow {
   border-top-color: #ccc;
 }
+.card{
+  margin-top: 2rem;
+}
+.list_modal_img{
+  margin-left:5rem;
+}

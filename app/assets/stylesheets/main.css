@@ -4,6 +4,7 @@
 	margin-bottom:0.5rem;
 	display: grid;
 	grid-template-columns:400px 400px 400px;
+	margin-right: 25rem;
 }
 
 .s2{
@@ -12,10 +13,9 @@
 	grid-template-columns:400px 400px 400px;
 }
  .container1{
-          width: 1000px;
+          width: 1150px;
           height: auto;
           margin: auto;
-          margin-left:17rem;
       }
 .snip1273 {
   font-family: 'Raleway', Arial, sans-serif;
