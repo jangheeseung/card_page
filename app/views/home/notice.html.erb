@@ -1,43 +1,38 @@
-<header>
-        <nav class='nav-basic' id="nav-basic">
-            <ul>
-                <li>
-                    <img src="..">
-                </li>
-                <li>
-                    <a href="/">HOME</a>
-                </li>
-                <li>
-                    <a href="/list">STORE</a>
-                </li>
-                <li>
-                    <a href="/notice">NOTICE</a>
-                </li>
-                <li>
-                    <a href="/index">APPLY</a>
-                </li>
-                
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#LoginModal">Login</a>
-                </li>
-                <li>
-                    <a href="#">Logout</a>
-                </li>
-            </ul>
-        </nav>
-        
-          <script>
-        const myNav = document.getElementById('nav-basic')
- 
-        window.onscroll = function () {
-            console.log(window.scrollY)
-            if (window.scrollY >= 0.1) {
-                myNav.className = 'nav-change';
-            }
-            else {
-                myNav.className = 'nav-basic';
-            }
-        }
-    </script>
-<h1>Home#notice</h1>
-<p>Find me in app/views/home/notice.html.erb</p>
+<body>
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+<div id="notice1">
+    <div class="notice_img">
+    <img src="assets/main.png" width="250px" height="250px">
+    </div>
+    <div class="notice_text">
+    <p>
+        <h3>서비스개발 동기</h3><br>
+        1. 현실 기준과 동떨어진 지원 금액<br>
+        2. 낮은 가맹점 수<br>
+        3. 주변 시선<br>
+        4. 편의점으로의 집중<br>
+       <h3>1.문제인식 Background Research<br></h3> 
+        1. 현실 기준과 동떨어진 지원 금액<br>
+    - 끼니를 해결하기에는 적은 금액이다.<br>
+    - 저렴한 식당이라도 가맹되어 있는 경우만 사용 가능하다.<br>
+
+2. 낮은 가맹점 수<br>
+    - 거래가 카드로만 이루어지기 때문에 가맹을 꺼려한다.<br>
+    - 일반카드처럼 결제할 수가 없고 전용단말기가 필요하다.<br>
+
+ 3. 주변 시선<br>
+    - 식당에 급식카드 가맹점표시가 미비하다.<br>
+    - 매번 물어보기에는 어린 감수성에 상처가 될 수 있다<br>
+
+4. 편의점으로의 집중<br>
+-식품의 개당 단가가 일반 식당에 비해 낮으며, 가격 대비 식품 선택의 폭이 넓고,<br>
+결제도 안정적으로 할 수 있는 편의점으로 결식아동이 몰리게 된다.<br>
+-그러나 편의점 식품의 특성상 균형잡힌 영양소 섭취가 어렵고,<br>
+패스트푸드 위주의 식단에, 신선한 채소와 과일 구매가 어렵다.<br>
+즉석식품/과일/유제품/반찬류/난각류 등으로 구매 가능 품목이<br>
+제한되어 있다. 즉, 과자나 탄산음료 등의 구매가 불가능하다.<br>
+    </p>
+    </div>
+</div>
+</body>

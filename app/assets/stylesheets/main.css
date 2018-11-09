@@ -140,3 +140,52 @@
 .snip1273.hover figcaption:after {
   opacity: 0.1;
 }
+
+.b1{
+    padding-left: 330px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.b2{
+     padding-left: 400px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.container2{
+    height: 100%;
+    width: 1000px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top:100px;
+        padding-bottom:100px;
+    /*font-family: 'Do Hyeon', sans-serif;*/
+    
+}
+.bd1{
+      border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.bd2{
+      border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.bd3{
+      border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}

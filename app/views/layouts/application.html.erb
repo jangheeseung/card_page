@@ -7,40 +7,53 @@
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body> 
 
- <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                       <img src="assets/main.png" width="50px" height="50px">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <form action='/users/sign_in' method='post'>
-                        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-                        <div class="form-group">
-                          <label for="user_email">ID</label>
-                          <input type="text" value="" name="user[email]" autofocus="autofocus"  class="form-control" id="user_email" aria-describedby="emailHelp" placeholder="Enter email">
-                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleInputPassword1 user_password">Password</label>
-                          <input type="password" name="user[password]" class="form-control" id="user_password" placeholder="Password">
-                        </div>
-                      
-                    </div>
-                    <div class="modal-footer">
-                      <button type="submit" class="btn btn-primary" name="commit" >Login</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                    </form>
-                  </div>
-  	    	</div>
-              </div>
+<header>
+        <nav class='nav-basic' id="nav-basic">
+            <ul>
+                <li>
+                    <img src="assets/main.png" width="35px" height="35px;">
+                </li>
+                <li>
+                    <a href="/">HOME</a>
+                </li>
+                <li>
+                    <a href="/list">STORE</a>
+                </li>
+                <li>
+                    <a href="/notice">NOTICE</a>
+                </li>
+                <li>
+                    <a href="/index">APPLY</a>
+                </li>
+                
+                <li>
+                    <a href="/Login">Login</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+                 <li>
+                    <a href="/signup">Sign up</a>
+                </li>
+            </ul>
+        </nav>
+        
+          <script>
+        const myNav = document.getElementById('nav-basic')
+ 
+        window.onscroll = function () {
+            console.log(window.scrollY)
+            if (window.scrollY >= 10) {
+                myNav.className = 'nav-change';
+            }
+            else {
+                myNav.className = 'nav-basic';
+            }
+        }
+    </script>
+    </header>
               
  
     <%= yield %>
