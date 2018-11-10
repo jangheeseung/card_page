@@ -71,8 +71,8 @@ body {
         }
    
    ul{
-   	margin-left: 10rem;
-   	padding-top: 0.8rem;
+   	/*margin-left: 10rem;*/
+   	padding-top: 0.7rem;
    }
        .HeaderImage {
             position: relative;
@@ -90,7 +90,11 @@ body {
           font-family: 'BMJUA';
           margin-top: 120px;
       }
-   
+      .logo{
+        float:right;
+        margin-right:1rem;
+        font-family: 'BMJUA';
+      }
 /*------------------------------------------------------------------footer---------------------------------------------------------------------*/
 *{
 	margin:0px;
@@ -255,4 +259,8 @@ font-family: 'BMJUA';
 }
 .map_under{
   height: 50px;
+}
+
+.logo{
+  padding-left: 2rem;
 }
