@@ -1,19 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 
 .s1{
-	margin-bottom:0.5rem;
+	/*margin-bottom:0.2rem;*/
 	display: grid;
 	grid-template-columns:400px 400px 400px;
 	margin-right: 25rem;
+		margin-bottom:5rem; 
 }
 .HeaderImage
 {
   margin-bottom: 5rem;
-}
-.s2{
-	margin-bottom:5rem;
-	display: grid;
-	grid-template-columns:400px 400px 400px;
 }
  .container1{
           width: 1150px;
@@ -42,6 +38,7 @@
 .snip1273 img {
   position: relative;
   max-width: 100%;
+  height: 17rem;
   vertical-align: top;
 }
 .snip1273 figcaption {
@@ -157,7 +154,7 @@
 .container2{
     height: 100%;
     width: 500px;
-margin:auto;
+  margin:auto;
     padding-top:100px;
         padding-bottom:100px;
          font-family: 'BMJUA';
@@ -192,4 +189,35 @@ margin:auto;
     padding-top: 20px;
     padding-right: 30px;
     padding-bottom: 20px;
+}
+#notice1{
+  margin: auto;
+  /*margin-bottom: 5rem;*/
+  /*margin-top: 5rem;*/
+  height:100%;
+  width: 960px;
+  font-family: 'BMJUA'; 
+   /*border: 4px solid black;*/
+   
+}
+.notice_img{
+  margin: 2rem;
+}
+.notice_text{
+  margin: 2rem;
+  font-size: 18px;
+}
+
+.notice_container{
+  float: right;
+  
+}
+.orange_text{
+  color: orange;
+  font-family: 'BMJUA';
+}
+.rem{
+  margin: auto;
+  width: 1200px;
+   border: 0.4px solid gray;
 }

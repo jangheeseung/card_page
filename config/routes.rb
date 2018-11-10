@@ -6,8 +6,6 @@ Rails.application.routes.draw do
  
   get '/list' =>'home#list'
 
-  get '/notice'=>'home#notice'
-
   get '/index'=>  'post#index'
 
   get 'wirte' => 'post#wirte'
