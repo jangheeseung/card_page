@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get '/index'=>  'post#index'
 
-  get '/wirte' =>'post#write'
+  get 'wirte' => 'post#wirte'
   
     get '/Login' =>'main#Login'
   

@@ -81,10 +81,11 @@ body {
             width: 100%;
         }
      
-        .container2{
-          width: 960px;
+        .container3{
+          width: 750px;
           height: auto;
           margin: auto;
+          font-family: 'BMJUA';
       }
    
 /*------------------------------------------------------------------footer---------------------------------------------------------------------*/
@@ -215,7 +216,7 @@ font-family: 'KoPubDotumMedium';
   text-decoration: none;
   position: relative;
   display: inline-block;
-  font-family: 'KoPubDotumMedium';
+font-family: 'BMJUA';
 }
 .btn:after {
   content: '';

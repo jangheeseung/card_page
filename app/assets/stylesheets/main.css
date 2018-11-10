@@ -6,7 +6,10 @@
 	grid-template-columns:400px 400px 400px;
 	margin-right: 25rem;
 }
-
+.HeaderImage
+{
+  margin-bottom: 5rem;
+}
 .s2{
 	margin-bottom:5rem;
 	display: grid;
@@ -16,6 +19,7 @@
           width: 1150px;
           height: auto;
           margin: auto;
+           font-family: 'BMJUA';
       }
 .snip1273 {
   font-family: 'Raleway', Arial, sans-serif;
@@ -142,7 +146,7 @@
 }
 
 .b1{
-    padding-left: 330px;
+    padding-left: 24rem;
     font-family: 'Do Hyeon', sans-serif;
 }
 .b2{
@@ -152,11 +156,11 @@
 
 .container2{
     height: 100%;
-    width: 1000px;
-    padding-left: 250px;
-    padding-right: 250px;
+    width: 500px;
+margin:auto;
     padding-top:100px;
         padding-bottom:100px;
+         font-family: 'BMJUA';
     /*font-family: 'Do Hyeon', sans-serif;*/
     
 }
